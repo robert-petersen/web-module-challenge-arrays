@@ -143,19 +143,25 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(array, flavor2Remove){
+    const newArray = [];
     for(let i = 0; i < array.length; i++){
-        if(array[i] = flavor2Remove){
-            array.splice(i, 1);
+        if(array[i] !== flavor2Remove){
+            newArray.push(array[i]);
         }
     }
+    // for(let i = 0; i < array.length; i++){
+    //     if(array[i] = flavor2Remove){
+    //         array.splice(i, 1);
+    //     }
+    // }
     // no vanilla >:|
     // for(let i = 0; i < array.length; i++){
     //     if(array[i] = "Vanilla"){
     //         array.splice(i, 1);
     //     }
     // }
-    console.log(array.length);
-    return array;
+    // console.log(array.length);
+    return newArray;
 }
 
 
